@@ -1,0 +1,390 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.white-color{
+  color: #FFF !important;
+}
+
+
+
+.btn{
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 12px;
+  margin: 10px 0 16px 0;
+  border: none;
+  height: 40px;
+
+}
+
+
+/* -------- */
+#nav {
+  display: inline-block;
+}
+#header {
+  background-color: black;
+  height: 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+#nav li {
+  list-style-type: none;
+}
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+#nav > li > a {
+  display: block;
+  line-height: 48px;
+  text-transform: uppercase;
+  padding: 0 24px;
+  text-decoration: none;
+  color: white; 
+  
+}
+#nav .subNav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 130%;
+  box-shadow: 0px 3px 9px black;
+}
+#nav .subNav li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  padding: 0 14px;
+}
+#nav .nav-arrow-down {
+  font-size: 11px;
+}
+#header .search-btn {
+  float: right;
+  padding: 0 20px;
+}
+#header .search-icon {
+  color: white;
+  font-size: 20px;
+  line-height: 48px;
+}
+#header .search-btn:hover, 
+#header .menu-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#nav li:hover .subNav {
+  display: block;
+}
+#header .menu-btn {
+  display: none;
+  width: 60px;
+  height: 48px;
+  color: #fff;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+    right: 0;
+    top: 0;
+}
+#nav .subNav > li:hover,
+#nav > li:hover > a  {
+  background-color: gray;
+  color: black;
+}
+
+#slider {
+  padding-top: 50%;
+  margin-top: 46px;
+  background-image: url("../assets/img/slider/newYork.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#slider .text-content {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+/* #slider .text-description{
+
+} */
+
+#content .content-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+#content .section-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+#content .section-slogan {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  line-height: 50px;
+}
+#content .section-description {
+  text-align: justify;
+  line-height: 1.4;
+  
+}
+
+#content  .member-list{
+  text-align:center;
+  
+}
+#content .member-name {
+  line-height: 70px;
+  
+}
+#content .member-avatar {
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  
+}
+  
+#content .content-tour{
+  background-color: #000;
+  margin-right: auto;
+  margin-left: auto;
+  
+} 
+.ticket-list {
+  background-color: #fff;
+  list-style-type: none;
+}
+.ticket-list li{
+  border-bottom: 1px solid #aaa;
+  line-height: 34px;
+  padding: 0 20px;
+  color: #696963;
+
+}
+.ticket-list .sold-out{
+  color: #FFF;
+  background-color: #f93b3b;
+  padding: 3px 8px;
+  margin-left: 9px;
+}
+
+.ticket-list .quantity{
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  float: right;
+  width: 24px;
+  height: 24px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 4px;
+}
+.ticket{
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.ticket-content{
+  background-color:#fff;
+  padding: 15px 15px 0px 15px;
+}
+
+ .ticket-img{
+  width: 100%;
+  display: block;
+}
+ .ticket-img:hover{
+  opacity: 0.6;
+}
+
+
+ .ticket-name{
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+ .ticket-date{
+  padding-bottom: 15px;
+  color: #757575;
+}
+ .ticket-description{
+  padding-bottom: 15px;
+  line-height:1.4;
+}
+.btn-buy-tickets:hover{
+  background-color: rgb(0,0,0, .5);
+}
+
+.content-contact .contact-items{
+  width: 50%;
+  float: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.content-contact .contact-detail{
+  font-size: 18px;
+}
+.content-contact .detail-icon{
+  margin-right: 15px;
+}
+.contact-form{
+  font-size: 15px;
+}
+
+.contact-form .form-control{
+  line-height: 28px;
+  padding: 4px;
+  width: 100%;
+  
+
+}
+.feedback-submit{
+  float: right;
+}
+.feedback-submit:hover{
+ background-color: rgb(0,0,0, .5)
+}
+
+.content-map img{
+  width:100%;
+}
+#footer{
+  text-align: center;
+  padding: 64px 0;
+}
+.contacts-social a{
+  text-decoration: none;
+  color: rgb(0,0,0, .5);
+  font-size: 20px;
+  padding: 0 4px;
+  
+}
+.contacts-social a:hover{
+  color: rgb(0,0,0, .7);
+}
+.contacts-social + p{
+  color: rgb(0,0,0, .5);
+  font-size:15px;
+  padding: 16px 0;
+}
+.contacts-social + p a{
+  color: rgb(0,0,0, .5);
+}
+
+.modal{
+  
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color:  rgb(0,0,0, .5);
+  z-index: 1;
+  display: none;
+  
+}
+.open{
+  display: flex !important;
+}
+.modal-container{
+  background-color:#ffffff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  animation: modalFadeIn ease .5s;
+  position: absolute;
+  top: 120px;
+  
+}
+.modal-header{
+  padding: 48px 32px;
+  background-color:#009688;
+}
+.modal-header .btn-close{
+  float: right;
+    margin-top: -48px;
+    margin-right: -32px;
+    padding: 16px 20px;
+    color: #fff;
+}
+.modal-header .btn-close:hover{
+  background-color: rgb(255,255,255, .5);
+  color: #000;
+}
+.modal-header > p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.modal-body{
+  padding: 0px 16px;
+}
+.modal-body .label-ticket{
+  font-size: 15px;
+  margin-top: 16px;
+}
+.quantity-ticket,
+.send-email{
+  width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    margin-top: 4px;
+
+}
+.btn-pay{
+  width: 100%;
+  padding: 16px 8px;
+  background-color:#009688;
+  color:#fff;
+  margin-top: 16px;
+  font-size:15px;
+  border: none;
+}
+.btn-pay:hover{
+  background-color: rgb(204,204,204);
+  color: rgb(0, 0, 0);
+}
+.contact-help p{
+  float: right;
+  padding: 16px;
+
+}
+.contact-help a{
+  color: rgb(18, 153, 231);
+}
+@keyframes modalFadeIn {
+  from { 
+    transform: translateY(-250px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
